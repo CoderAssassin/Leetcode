@@ -2,6 +2,7 @@
  * @author aliyang
  * @date 18-5-28 下午8:57
  * sort-list:别人解法
+ * 思路：归并排序思想
  */
 public class T4 {
 
