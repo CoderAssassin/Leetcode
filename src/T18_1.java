@@ -42,7 +42,5 @@ public class T18_1 {
             }
             hm.get(node).neighbors.add(hm.get(neighbor));//新的节点的邻接节点的添加
         }
-
     }
-
 }
