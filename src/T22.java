@@ -1,7 +1,9 @@
 /**
  * @author aliyang
  * @date 18-6-1 下午6:56
- * 
+ * sum-root-to-leaf-numbers：我的解法
+ * 思路：使用递归
+ * 别人思想改进：不用字符串，直接用数字，每下一层那么乘10
  */
 public class T22 {
 
