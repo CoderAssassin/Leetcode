@@ -2,6 +2,7 @@
  * @author aliyang
  * @date 18-6-1 下午9:39
  * valid-palindrome：我的解法
+ * 思路：两个指针，从左到右，从右到左一起搜
  */
 public class T26 {
 
