@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * 思路：从下往上搜，用下边的值更新上边的值
  */
 public class T31_1 {
-    
+
     public int minimumTotal(ArrayList<ArrayList<Integer>> triangle) {
         for (int i = triangle.size() - 2; i >= 0; i --) {
             for (int j = 0; j < triangle.get(i + 1).size() - 1; j ++) {
