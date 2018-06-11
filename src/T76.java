@@ -15,7 +15,7 @@ public class T76 {
         for (int i=0;i<row;i++)
             if (matrix[i][0]==0){
             col_flag=true;
-            break;;
+            break;
             }
         for (int i=0;i<col;i++){
             if (matrix[0][i]==0){
