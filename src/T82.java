@@ -21,7 +21,6 @@ public class T82 {
                 break;
         }
         int[] res;
-        res[0]=1;
         if (jinwei==1){
 //            for (int i=0;i<digits.length;i++)
 //                res[i+1]=digits[i];
