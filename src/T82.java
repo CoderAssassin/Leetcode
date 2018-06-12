@@ -20,11 +20,14 @@ public class T82 {
             if (jinwei==0)
                 break;
         }
-        int[] res=new int[digits.length+1];
+        int[] res;
         res[0]=1;
         if (jinwei==1){
-            for (int i=0;i<digits.length;i++)
-                res[i+1]=digits[i];
+//            for (int i=0;i<digits.length;i++)
+//                res[i+1]=digits[i];
+//            根据别人思想优化，不用复制数组。。。。。。。。。
+            res=new int[digits.length+1];
+            res[0]=1;
             return res;
         }else
             return digits;
