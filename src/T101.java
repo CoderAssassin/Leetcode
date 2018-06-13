@@ -84,6 +84,7 @@ public class T101 {
 //        return true;
 //    }
 
+//    别人思路：对每个字符串先排个序，使用map存储同样字符串的所有数组中字符串，然后将值大于1的输出
     public ArrayList<String> anagrams(String[] strs) {
         ArrayList<String> result = new ArrayList<>();
         Map<String, ArrayList<String>> map = new HashMap<>();
