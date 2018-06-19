@@ -8,7 +8,7 @@ public class T140 {
 
     public boolean isPalindrome(int x) {
 
-        if (x<0)
+        if (x<0||x!=0&&x%10==0)//负数或者10的整数倍
             return false;
 
         int y=x;
