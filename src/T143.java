@@ -1,7 +1,7 @@
 /**
  * @Author:Aliyang
  * @Data: Created in 上午10:49 18-6-19
- * zigzag-conversion：我的解法
+ * zigzag-conversion：别人解法
  * 思路：题目没看懂，看了别人的才知道zigzag是怎么回事。斜着的一共有n-2个元素。想象除了第一行和最后一行，每个周期有两个元素
  **/
 public class T143 {
@@ -20,5 +20,11 @@ public class T143 {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args){
+        T143 t=new T143();
+        String s="PAYPALISHIRING";
+        System.out.println(t.convert(s,3));
     }
 }
