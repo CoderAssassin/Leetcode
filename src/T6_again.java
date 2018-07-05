@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Stack;
 
 /**
@@ -20,21 +21,19 @@ public class T6_again {
         ArrayList<Integer> res=new ArrayList<>();
         if (root==null)
             return res;
-        Stack<Integer> stack=new Stack<>();
-        traverse(root,stack);
-        while (!stack.isEmpty())
-            res.add(stack.pop());
+        Stack<TreeNode> stack=new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()){
+            TreeNode tmp=stack.pop();
+            res.add(tmp.val);
+            if (tmp.left!=null)
+                stack.push(tmp.left);
+            if (tmp.right!=null)
+                stack.push(tmp.right);
+        }
+        Collections.reverse(res);
+
         return res;
-    }
-
-    private void traverse(TreeNode root,Stack<Integer> stack){
-
-        if (root==null)
-            return;
-
-        stack.push(root.val);
-        traverse(root.right,stack);
-        traverse(root.left,stack);
     }
 
     public static void main(String[] args){
