@@ -52,7 +52,7 @@ public class T19 {
 
     public static void main(String[] args){
         T19 t=new T19();
-        String s="ab";
+        String s="bb";
 
         System.out.println(t.minCut(s));
 
