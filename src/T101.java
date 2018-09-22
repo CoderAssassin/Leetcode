@@ -100,7 +100,7 @@ public class T101 {
             return result;
     }
 
-            public String sortString(String s) {
+    public String sortString(String s) {
         char[] arr = s.toCharArray();
         Arrays.sort(arr);
         return new String(arr);
